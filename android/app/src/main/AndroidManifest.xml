@@ -5,7 +5,7 @@
             android:name="${applicationName}"
             android:icon="@mipmap/ic_launcher">
         <activity
-                android:name="me.yptang.get.flutter.MainActivity"
+                android:name="me.yptang.flutter.MainActivity"
                 android:exported="true"
                 android:launchMode="singleTop"
                 android:theme="@style/LaunchTheme"
