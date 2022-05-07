@@ -25,6 +25,7 @@ dependencies:
   mmkv: ^1.2.14
   # 日志输出
   logger: ^1.1.0
+  pretty_dio_logger: ^1.1.1
   # logger_flutter: ^0.7.1
   # H5能力
   webview_flutter: ^3.0.2
@@ -37,13 +38,24 @@ dependencies:
   device_info_plus: ^3.2.3
   # 网络状态信息
   connectivity_plus: ^2.3.0
+  # 状态管理
+  provider: ^6.0.2
+  # json注解标记
+  json_annotation: ^4.5.0
+  # 加解密工具
+  encrypt: ^5.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  retrofit_generator: ^4.0.1
+  json_serializable: ^6.2.0
+  build_runner: ^2.1.10
   flutter_lints: ^1.0.0
 
 flutter:
 
   uses-material-design: true
+  assets:
+    - assets/image/

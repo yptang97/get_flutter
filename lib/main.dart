@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get_flutter/api/home_api_client.dart';
+import 'package:get_flutter/http/hi_dio_client.dart';
+
+import 'entity/joke_entity.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,8 +33,12 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  void _incrementCounter() {
+  void _incrementCounter() async {
     setState(() => _counter++);
+    final api = HomeApi(HiDioClient.getInstance().getDio());
+    JokeWrapper data = await api.loadRecommendData();
+
+    print(data.data.first.joke.videoUrl);
   }
 
   @override
